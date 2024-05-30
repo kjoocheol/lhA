@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css 선언 -->
+    <style>
+        /* style 태그 내 작성하는 코드는 css 코드 */
+        /* css 코드에서의 주석 */
+
+        /* class 명 h1을 적용한 태그에 선언해 놓은 style들이 적용된다 */
+        .h1{
+            display: block;
+            font-size: 34px;
+            font-weight: bold;
+        }
+
+        .bg-yellow{
+            background-color: yellow;
+        }
+
+        .k1{
+            text-decoration: none;
+            color: #03CA5B
+        }
+
+        /* 앞에 .을 붙이면 특정 태그의 class를 통해 style을 적용할 수 있고 태그 이름을 작성하면 해당 모든 태그에 style을 적용할 수 있다*/
+        div{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black
+        }
+
+        /* 이미 정의되어 있는 색상 이름 사용*/
+        .name-color{
+            background-color: aquamarine;
+        }
+
+        /*rgb 이용*/
+        /*rgb 색상의 수치는 0~255*/
+        .rgb-color{
+            background-color: rgb(0, 0, 255);
+        }
+
+        /* hashcode 이용 */
+        /* 네이버 색상 해시코드 #03CA5B: rgb에 대한 16진수 표현법*/
+        .hash-color{
+            background-color: #03CA5B ;
+        }
+        
+        /*색깔과 함께 투명도(aplha)*/
+        .rgba-color{
+            background-color: rgba(255, 0, 0, 0.7)
+        }
+
+        .rgba-hash{
+            background-color: rgba(255, 0, 0, 0.7)
+        }
+
+        .rgba-opacity{
+            background-color: #ca5e5e;
+            /*투명도가 70%*/
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <span class="h1">h1과 같음!!</span>
+
+    <!-- 띄어 쓰기를 이용해서 여러 개의 css를  적용할 수 있다 -->
+    <div class="h1 bg-yellow">나도 h1 스타일 적용할래</div>
+
+    <a href="https://www.naver.com/" target="_blank" class="k1">네이버</a>
+
+    <!-- 색상에 대하여 적용 -->
+    <div class="name-color"></div>
+    <div class="rgb-color"></div>
+    <div class="hash-color"></div>
+    <div class="rgba-hash"></div>
+    <div class="rgba-color"></div>
+    <div class="rgb-opacity"></div>
+
+
+</body>
+</html>

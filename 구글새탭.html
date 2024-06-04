@@ -1,55 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>새 탭</title>
 
     <style>
-        div{
-            border: 1px solid black;
+        div {
+            border: 0px solid black;
         }
 
-        .header{
+        .header {
             display: flex;
             justify-content: end;
         }
 
-        .header > div{
+        .header>div {
             display: flex;
             align-items: center;
         }
 
-        .header a{
+        .header a {
             margin-left: 5px;
             margin-right: 5px;
 
             color: black;
             text-decoration: none;
-            
+
         }
 
-        .header a:hover{
+        .header a:hover {
             text-decoration: underline;
         }
 
-        .header img{
+        .header img {
             width: 40px;
             /* radius를 width의 절반을 주면 원이 된다 */
             border-radius: 20px;
         }
 
-        .header img:hover{
+        .header img:hover {
             /* 이미지의 효과 주기 */
-            filter: brightness(70%);
+            background-color: #dddddd;
         }
 
-        .logo_box{
+        .logo_box {
+            display: flex;
+            justify-content: center;
+            padding-top: 100px;
+        }
+
+        .search-box {
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+        }
+
+        .search-box>input {
+            width: 500px;
+            border: 0;
+            box-shadow: 0px 0px 4px 2px #dddddd;
+            font-size: 24px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        .icon-container {
             display: flex;
             justify-content: center;
         }
+
+        .icon-box {
+            width: 600px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .icon {
+            width: calc(100%/5);
+            height: 140px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            cursor: pointer;
+        }
+
+        .icon:hover {
+            background-color: #dddddd;
+        }
     </style>
 </head>
+
 <body>
     <div class="header">
         <div>
@@ -61,7 +106,61 @@
     </div>
 
     <div class="logo_box">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png"
+            alt="">
     </div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Google 검색 또는 URL 입력">
+    </div>
+
+    <div class="icon-container">
+        <div class="icon-box">
+            <div class="icon">
+                <img width="50%" src="https://littledeep.com/wp-content/uploads/2020/09/naver-icon-style.png" alt="">
+                <span>NAVER</span>
+            </div>
+            <div class="icon">
+                <img width="50%" src="https://littledeep.com/wp-content/uploads/2020/09/naver-icon-style.png" alt="">
+                <span>NAVER</span>
+            </div>
+            <div class="icon">
+                <img width="50%" src="https://littledeep.com/wp-content/uploads/2020/09/naver-icon-style.png" alt="">
+                <span>NAVER</span>
+            </div>
+            <div class="icon">
+                <img width="50%" src="https://littledeep.com/wp-content/uploads/2020/09/naver-icon-style.png" alt="">
+                <span>NAVER</span>
+            </div>
+            <div class="icon">
+                <img width="50%" src="https://littledeep.com/wp-content/uploads/2020/09/naver-icon-style.png" alt="">
+                <span>NAVER</span>
+            </div>
+            <div class="icon">
+                <img width="50%" src="https://littledeep.com/wp-content/uploads/2020/09/naver-icon-style.png" alt="">
+                <span>NAVER</span>
+            </div>
+            <div class="icon">
+                <img width="50%" src="https://littledeep.com/wp-content/uploads/2020/09/naver-icon-style.png" alt="">
+                <span>NAVER</span>
+            </div>
+            <div class="icon">
+                <img width="50%" src="https://littledeep.com/wp-content/uploads/2020/09/naver-icon-style.png" alt="">
+                <span>NAVER</span>
+            </div>
+            <div class="icon">
+                <img width="50%" src="https://littledeep.com/wp-content/uploads/2020/09/naver-icon-style.png" alt="">
+                <span>NAVER</span>
+            </div>
+            <div class="icon">
+                <img width="50%" src="https://littledeep.com/wp-content/uploads/2020/09/naver-icon-style.png" alt="">
+                <span>NAVER</span>
+            </div>
+        </div>
+    </div>
+            
+                                        
+
 </body>
+
 </html>
